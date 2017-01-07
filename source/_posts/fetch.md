@@ -36,7 +36,7 @@ categories: 数据请求
 
 #### 简单的fetching示例
 
-```
+```javascript
 fetch("/data.json").then(function(res) {
   // res instanceof Response == true.
   if (res.ok) {
@@ -53,7 +53,7 @@ fetch("/data.json").then(function(res) {
 
 #### 如果是提交一个POST请求，代码如下：
 
-```
+```javascript
 fetch("/data.json", {
   method: "POST",
   headers: {
@@ -75,7 +75,7 @@ fetch("/data.json", {
 
 #### 可以通过传body参数来设置Request的body：
 
-```
+```javascript
 var form = new FormData(document.getElementById('data'));
 fetch("/login", {
   method: "POST",
@@ -85,7 +85,7 @@ fetch("/login", {
 
 ## 实战
 
-```
+```javascript
     /**
      * @name GetAjax ajax请求插件+
      * @param url 请求接口

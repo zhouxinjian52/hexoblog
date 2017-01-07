@@ -10,7 +10,7 @@ categories  Promise
 
 ### Promise到底怎么用？？？
 
-```
+```javascript
 创建一个Promise实例，获取数据。并把数据传递给处理函数resolve和reject。需要注意的是Promise在声明的时候就执行了。
 var getUserInfo=new Promise(function(resolve,reject){
     $.ajax({
@@ -51,5 +51,5 @@ Promise.all([getUserInfo,getDataList]).then(function([ResultJson1,ResultJson2]){
 })
 ```
 
- 不用我再过多解释了吧！！
+> 不用我再过多解释了吧！！
 
